@@ -6,7 +6,7 @@ import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 function TopNav() {
     return (
-        <>
+        <>  
      
             <div className='top-head'>
                 <div className='sp-offer'><a href='#'> Best special Offers 40% Off</a></div>

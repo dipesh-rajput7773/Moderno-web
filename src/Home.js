@@ -1,13 +1,20 @@
 import React from 'react'
-import Header from './Layouts/Header'
+
 import HeroSec from './Layouts/HeroSec'
+import Category from './Layouts/Category'
+import Believe from './components/Believe'
 
 
 function Home() {
   return (
-    <>
-   <Header />
+    <>  
+
+    
+
    <HeroSec />
+   <Category />
+
+   <Believe />
     </>
   )
 }

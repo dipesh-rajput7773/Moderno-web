@@ -21,6 +21,7 @@ function BannerSection() {
     };
     return (
         <>
+        
             <div className='slider-sec'>
 
                 <Carousel
@@ -140,7 +141,7 @@ function BannerSection() {
 
             </div>
 
-
+         
         </>
     )
 }
