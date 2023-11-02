@@ -4,8 +4,8 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 
-
-function Product() {
+const Product = (props)=>{
+//function Product(props) {
 
   function trimDescription(desc) {
     return (
@@ -15,25 +15,27 @@ function Product() {
 
 
   let navigate = useNavigate();
-  const { id } = useParams()
+  const { categoryname } = useParams()
 
   const [product, setProduct] = useState([])
-
+       
+  
 
   useEffect(() => {
-    axios.get("https://fakestoreapi.com/products/category/" + id)
+    console.log(props.category)
+    axios.get("https://fakestoreapi.com/products/category/" + categoryname)
       .then((result) => {
-        console.log(result.data)
+        //console.log(result.data)
         setProduct(result.data)
       })
       .catch((err) => {
         return navigate("/category")
       })
-  }, [])
+  }, [categoryname])
   return (
     <>
       <div className='container'>
-        <h2>{id}</h2>
+        <h2>{categoryname}</h2>
         <div className='row'>
           {
             product && product.map(((e, i) => {

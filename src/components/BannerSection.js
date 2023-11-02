@@ -30,7 +30,7 @@ function BannerSection() {
 
                 >
                     <div> 
-                        <div className='row align-items-center'>
+                        <div className='row align-items-center reverse-sec'>
 
                         <div className='col-lg-4'>
 
@@ -60,7 +60,7 @@ function BannerSection() {
                     </div>
 
 
-                    <div> <div className='row align-items-center'>
+                    <div> <div className='row align-items-center reverse-sec'>
 
                         <div className='col-lg-4'>
 
@@ -86,7 +86,7 @@ function BannerSection() {
 
 
                     </div></div>
-                    <div> <div className='row align-items-center'>
+                    <div> <div className='row align-items-center reverse-sec'>
 
                         <div className='col-lg-4'>
 
@@ -111,7 +111,7 @@ function BannerSection() {
 
 
                     </div></div>
-                    <div> <div className='row align-items-center'>
+                    <div> <div className='row align-items-center reverse-sec'>
 
                         <div className='col-lg-4'>
 

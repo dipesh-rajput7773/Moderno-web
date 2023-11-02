@@ -1,21 +1,34 @@
 import React from 'react'
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 function Marquee() {
   return (
-    <div class="marquee">
-    <div>
-      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, veniam?</div>
-      <div>Consectetur adipisicing elit. Porro, obcaecati.</div>
-      <div>Error vel, obcaecati eligendi possimus, accusamus minima magni nobis excepturi consectetur animi sit.</div>
-    </div>
-  
+    <div className="marquee">
+      <div>
 
-    <div>
-      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, veniam?</div>
-      <div>Consectetur adipisicing elit. Porro, obcaecati.</div>
-      <div>Error vel, obcaecati eligendi possimus, accusamus minima magni nobis excepturi consectetur animi sit.</div>
+        <div className='marquee-content'> <FiberManualRecordIcon /> Money Back guarantee</div>
+        <div className='marquee-content' ><FiberManualRecordIcon />24/7 support</div>
+        <div className='marquee-content' ><FiberManualRecordIcon />High quality cotton</div>
+        <div className='marquee-content' ><FiberManualRecordIcon />free delivery </div>
+      </div>
+
+
+      <div>
+
+        <div className='marquee-content' ><FiberManualRecordIcon />Money Back guarantee</div>
+        <div className='marquee-content' ><FiberManualRecordIcon />24/7 support</div>
+        <div className='marquee-content' ><FiberManualRecordIcon />High quality cotton</div>
+        <div className='marquee-content' ><FiberManualRecordIcon />free delivery </div>
+      </div>
+
+      <div>
+
+        <div className='marquee-content' ><FiberManualRecordIcon />Money Back guarantee</div>
+        <div className='marquee-content' ><FiberManualRecordIcon />24/7 support</div>
+        <div className='marquee-content' ><FiberManualRecordIcon />High quality cotton</div>
+        <div className='marquee-content' ><FiberManualRecordIcon />free delivery </div>
+      </div>
     </div>
-  </div>
   )
 }
 

@@ -8,7 +8,21 @@ function Category() {
     const [category, SetCategory] = useState([])
 
 
+    const imgObj = [
+        {
+            url: '/cat-2.jpg'
 
+        },
+        {
+            url: '/category-2106631175-600x929.jpg'
+        },
+        {
+            url: '/cat-2.jpg'
+        },
+        {
+            url: '/cat-2.jpg'
+        }
+    ]
 
 
 
@@ -28,20 +42,34 @@ function Category() {
             </h2>
 
             <div className='categories'>
-                <ul>
+                <div className="category-box">
+
                     {
                         category.map((item, index) => {
-                            return <li key={index} > <Link to={`/category/${item}`} > {item}</Link> </li>
+                            return <div key={index} className="category-crd"> <Link to={`/category/${item}`} >
+
+
+
+                                <div className="" style={{ height: '400px', width: '400px', backgroundImage: `url('${imgObj[index].url}')`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
+                                    <div className="heading-category">
+
+                                     
+                                        <h2 className="catagory-heading">{item}</h2>
+
+                                    </div>
+                                </div>
+
+
+                            </Link> </div>
 
                         })
                     }
 
-    
 
-                </ul>
+                </div>
 
 
-                
+
             </div>
 
         </div>
@@ -50,3 +78,9 @@ function Category() {
 }
 
 export default Category
+
+
+
+
+
+

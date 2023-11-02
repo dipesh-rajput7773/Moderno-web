@@ -446,14 +446,17 @@ header {
     word-spacing: 2px;
     text-align: center;
 
-    padding: 80px 15px 0 15px;
+    padding: 30px 15px 0 15px;
 }
+
+/* .belive-sec {
+  padding: 50px 30px;
+} */
 
 
 .belive-content {
-  /* padding: 100px 10px 0 10px; */
+  padding: 50px 30px !important; 
 }
-
 
 .slider-sec {
 
@@ -466,30 +469,152 @@ header {
 
 
 
+.review-slider-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+
+  .buy li.react-multi-carousel-item.react-multi-carousel-item--active {
+  flex: 1 1 auto;
+  position: relative;
+  width: 750px !important;
+ 
+}
+
+.review-slider-box {
+
+    background-color: #fff;
+    border: 1px solid #070707;
+    /* padding: 70px 90px; */
+    display: flex;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+    margin-right: 100px;
+
+    text-align: start;
+
+}
+.category-box {
+  display: flex;
+  justify-content: center;
+
+}
+
+.category-crd {
+  border: 1px solid #070707;
+  position: relative;
+}
+
+
+.heading-category {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  text-align: center;
+
+    
+    
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: .0175em;
+    text-transform: uppercase;
+    color: #070707;
+    background-color: #fff;
+    padding: 15px 46px;
+    transition: background-color .3s linear,color .3s linear;
+
+}
+
+.catagory-heading {
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  /* marquee text  */
 
  :root {
-  --marquee-speed: 40s;
+  --marquee-speed: 10s;
   --marquee-hover-offset: -50px;
   --marquee-hover-transition-speed: .7s;
   --marquee-fade-edges: 30%;
+}
+
+
+
+.marquee-content svg {
+  font-size: 6px;
+  margin: 0 10px;
 }
  .marquee {
  
    
     padding: 2rem 0;
-    border: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
 
  }
 .marquee {
   overflow: hidden;
-  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0%) 0%, #000 var(--marquee-fade-edges), #000 calc(100% - var(--marquee-fade-edges)), rgba(0, 0, 0, 0%) 100%);
+
   
   &,
   > div {
     display: flex;
     white-space: nowrap;
-    gap: 30px;
+    gap: 15px;
+
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 15px;
+    letter-spacing: 0.02em;
   }
  
   > div {
@@ -500,7 +625,7 @@ header {
   
   &:hover > div {
     animation-play-state: paused;
-    margin-left: var(--marquee-hover-offset);
+    /* margin-left: var(--marquee-hover-offset); */
   }
 }
 

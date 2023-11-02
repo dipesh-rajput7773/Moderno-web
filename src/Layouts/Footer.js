@@ -63,7 +63,7 @@ function Footer() {
                     <div className='col-md-4'>
 
                         <div className='copyright-content'>
-                            <h2 class="elementor-heading-title">© 2023 Moderno Theme. All Rights Reserved.</h2>
+                            <h2 className="elementor-heading-title">© 2023 Moderno Theme. All Rights Reserved.</h2>
                         </div>
 
                     </div>
