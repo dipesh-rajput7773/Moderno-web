@@ -3,6 +3,7 @@ import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import SearchIcon from '@mui/icons-material/Search';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
+import { Link } from 'react-router-dom';
 
 function TopNav() {
     return (
@@ -15,7 +16,7 @@ function TopNav() {
 
                 <div className='top-menu'>
                     <ul>
-                        <li> <PermIdentityIcon /></li>
+                        <li> <Link to={'/loginpage'}> <PermIdentityIcon /></Link> </li>
                         <li> <SearchIcon /></li>
                         <li> <FavoriteBorderIcon /></li>
                         <li> <LocalMallIcon /></li>

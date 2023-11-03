@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar'
 
 function Header() {
   return (
-  <header>
+  <header className='sticky-top'>
   <TopNav />
   <NavBar/>
   </header>

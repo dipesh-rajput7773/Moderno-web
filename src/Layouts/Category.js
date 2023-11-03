@@ -9,20 +9,23 @@ function Category() {
 
 
     const imgObj = [
-        {
-            url: '/cat-2.jpg'
+        {    
+            url: '/computer-laptop-work-place-camera-705164.webp'
 
+        },
+        {
+            url: '/beautiful-engagement-ring-with-diamonds.jpg'
         },
         {
             url: '/category-2106631175-600x929.jpg'
         },
         {
             url: '/cat-2.jpg'
-        },
-        {
-            url: '/cat-2.jpg'
         }
     ]
+    // const imgObj = ['/cat-2.jpg','/category-2106631175-600x929.jpg', '/cat-2.jpg', '/cat-2.jpg'];
+
+
 
 
 
@@ -46,21 +49,11 @@ function Category() {
 
                     {
                         category.map((item, index) => {
-                            return <div key={index} className="category-crd"> <Link to={`/category/${item}`} >
-
-
-
-                                <div className="" style={{ height: '400px', width: '400px', backgroundImage: `url('${imgObj[index].url}')`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
-                                    <div className="heading-category">
-
-                                     
-                                        <h2 className="catagory-heading">{item}</h2>
-
-                                    </div>
-                                </div>
-
-
-                            </Link> </div>
+                            return <div key={index} className="category-crd" style={{  backgroundImage: `url('${imgObj[index].url}')`, backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}> 
+                            <Link to={`/category/${item}`} >
+                                 <h2 className="catagory-heading">{item}</h2>
+                            </Link> 
+                            </div>
 
                         })
                     }

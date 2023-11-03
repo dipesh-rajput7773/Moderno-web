@@ -16,8 +16,8 @@ function Home() {
       <HeroSec />
       <Marquee />
       <Category />
-      <ReviewSection />
       <Believe />
+      <ReviewSection />
       <Marquee />
     </>
   )
